@@ -50,19 +50,8 @@
 					 Background2.src = 'https://chupacdn.s3.amazonaws.com/catalog/product/cache/5/thumbnail/1280x/17f82f742ffe127f42dca9de82fb58b1/6/-/6-vector-game-backgrounds-8003_imgs_8003_4.png';
 					 RainbowDash.Image.src='https://orig00.deviantart.net/3799/f/2014/229/1/e/my_little_pony_sprites_by_ketrindarkdragon-d7vinuj.gif'
 					 CoinImage.Image.src='http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/images/coin-sprite-animation-sprite-sheet.png';
-					myAudio = new Audio('MLP_song'); 
-					if (typeof myAudio.loop == 'boolean')
-						{
-						myAudio.loop = true;
-						}
-						else
-{
-						 myAudio.addEventListener('ended', function() {
-						 this.currentTime = 0;
-						 this.play();
-						}, false);
-					}
-						myAudio.play();
+					 var myMusic = new sound('MLP_song.mp3');
+					  myMusic.play();
 					 }
 				 
 					
@@ -85,6 +74,8 @@
 							RainbowDash.height*2 + RainbowDash.yPos> Coins[i].yPos) {
 							Coins.splice(i,1);
 							Score+=1;
+							var audio = new Audio('Coin_Sound.mp3');
+							 audio.play();
 						 }
 					 	  Coins[i].xPos-=3;
 						  if(Coins[i].xPos<-50){
@@ -287,6 +278,8 @@
 						}
 						
 					}
+					
+				
 				
 					
 					
