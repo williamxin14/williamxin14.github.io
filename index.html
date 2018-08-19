@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<style>
+			body{
+				 background-image:url('https://i.pinimg.com/originals/47/39/08/473908d3be5533d60eb59ad1e1d3e4c2.jpg');
+				 /*background-size: 2737px 1506px; */
+				 background-size: 3000px 2006px;
+				 background-repeat: no-repeat;
+				}
+
+			#WebsiteTitle{
+				font-family:courier;
+				font-size:60px;
+				color:blue;
+				text-align:center;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			#GameTitle{
+				font-family:Comic Sans MS;
+				font-size:25px;
+				color:red;
+				text-align:center;
+				margin-top: 10px;
+			}
+
+			#myCanvas{
+			 background-color:white;
+			 border:6px solid #000000;
+			 }
+			 #Instructions{
+			 font-family:"Franklin Gothic Medium";
+			 font-size: 40px;
+			 margin-left:330px;
+			 line-height:35%;
+			 color:#330033;
+			 }
+			 #words{
+			 font-family: "Courier New", cursive;
+			 font-size: 40px;
+			 margin-left:330px;
+			 line-height:90%;
+			 color:#000000;
+			 }
+			 
+		</style>
+		<title > Coin Collector </title>
+		<link rel="icon" href="https://www.flooringdirect.co.uk/images/beauflor-spirit-chessboard-vinyl-flooring-p755-3264_image.jpg">
+
+	</head>
+
+
+	<body onload="startGame()">
+		<h1 id="WebsiteTitle">William's Little Race Game</h1>
+		<p id="GameTitle">Coin Collector </p>
+		<audio hidden controls loop autoplay>
+  
+        <source src="MLP_song.mp3" type="audio/mp3">
+  
+        </audio>
+
+		<center><canvas id="myCanvas"; width=850; height=500; ></canvas></center>
+		<script src="FirstGame.js"></script>
+		<p id="Instructions"> Instructions</p>
+		<h1 id="words">  Collect the coins by moving up and down with the W and S keys!</h1>
+	</body>
+
+</html>
