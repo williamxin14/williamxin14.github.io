@@ -4,7 +4,7 @@
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
-    --color-headings: #1b0760;
+    --color-headings: #ffffff;
     --color-body: #918ca4;
     --color-body-darker: #5c5577;
     --color-border: #ccc;
@@ -207,5 +207,134 @@ a {
 /* Hero */
 .hero {
     clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 95% 100%);
+  }
+
+/* Blocks */
+.block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+  }
+  
+  .block__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .block__heading {
+    margin-top: 0;
+  }
+  
+  .block--dark {
+    background: #000;
+    color: #7b858b;
+  }
+  
+  .block--dark .block__heading {
+    color: #fff;
+  }
+  
+  .block--skewed-right {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  }
+  
+  .block--skewed-left {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+  
+  .container {
+    
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+  .footer .container{
+    margin: 5rem auto;
+  }
+
+  /* Cards */
+.card {
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+  }
+  
+  .card__header,
+  .card__body {
+    padding: 2rem 3rem;
+  }
+  
+  .card--primary .card__header {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
+  .card--secondary .card__header {
+    background: var(--color-secondary);
+    color: #fff;
+  }
+  
+  .card--secondary .badge--secondary {
+    background: #02cdf1;
+  }
+
+  /* projects */
+.project {
+    padding: 3rem;
+  }
+  
+  .project__image {
+    position: relative;
+    margin: 0 3rem;
+  }
+  
+  .project__image > img {
+    width: 100%;
+  }
+  
+  .project__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+  }
+  .project_description{
+    padding: 2rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .project__image {
+      margin: 0;
+    }
+  
+    .project .quote,
+    .project .quote__author {
+      font-size: 2.4rem;
+    }
+  
+    .project .quote {
+      margin-left: 6rem;
+      margin-right: 0;
+    }
+  }
+
+  /* Features */
+.feature__heading{
+    margin: 1rem 0;
+  }
+  .feature:first-of-type{
+    margin-top: 6rem;
+  }
+  .feature{
+    gap: 4rem 2rem;
+    margin:12rem 0;
+  }
+  
+  .feature__image{
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content{
+      order:2;
+    }
   }
   
