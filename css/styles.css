@@ -28,6 +28,7 @@ body {
   line-height: 1.5;
   color: var(--color-body);
   background-color: #000;
+  
  
 }
 
@@ -78,7 +79,7 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0rem 4rem;
+  padding: 0rem 0rem;
   align-items: center;
   padding-left: 0;
 }
@@ -99,7 +100,7 @@ p {
 }
 
 .nav__item > a:hover {
-  color: #fff;
+  color: cyan;
 }
 
 .nav__toggler {
@@ -143,7 +144,7 @@ a {
   color: var(--color-body);
 }
 li:hover:not(.active) {
-  background-color: #5221e6;
+  background-color: #222
 }
 
 .link-arrow {
@@ -194,9 +195,7 @@ li:hover:not(.active) {
 
 /*Banner */
 .banner {
-  background-color: #5221e6;
-  background-image: linear-gradient(180deg, transparent, transparent),
-    linear-gradient(90deg, #5221e6, #8d21e6);
+  background: #181823;
   text-decoration: none;
   width: 100%;
   height: 4rem;
@@ -242,8 +241,8 @@ li:hover:not(.active) {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1140px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .footer .container {
   margin: 5rem auto;
@@ -301,8 +300,8 @@ li:hover:not(.active) {
 }
 .project__section {
   padding: 4rem;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media screen and (min-width: 768px) {
@@ -353,6 +352,10 @@ li:hover:not(.active) {
   display: block;
 }
 
+.wrapper.button-grid {
+  grid-template-columns: 2fr 1fr;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper.projects-grid {
     display: -ms-grid;
@@ -364,6 +367,17 @@ li:hover:not(.active) {
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
+  }
+
+  .wrapper.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    column-gap: 7.5rem;
+    width: 75%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -387,4 +401,29 @@ li:hover:not(.active) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
+}
+
+/* Button */
+.projects__button{
+  color: white;
+  border-color: #5221e6;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
+  text-align: center;
+  border-style: solid;
+  border-width: .5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-style: bold;  
+}
+
+.projects__button:hover{
+  background-color: rgba(82,33,230,100%);
+  transition-duration: .5s;
+
+ 
 }
