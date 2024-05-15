@@ -28,6 +28,7 @@ body {
   line-height: 1.5;
   color: var(--color-body);
   background-color: #000;
+ 
 }
 
 h1,
@@ -300,6 +301,8 @@ li:hover:not(.active) {
 }
 .project__section {
   padding: 4rem;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
 }
 
 @media screen and (min-width: 768px) {
@@ -316,6 +319,14 @@ li:hover:not(.active) {
     margin-left: 6rem;
     margin-right: 0;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .project__section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 }
 
 /*Wrapper*/
