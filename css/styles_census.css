@@ -121,5 +121,19 @@ th{
     color: #edeee7;
 }
 
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 20%;
+    }
+    
+    .info{
+        border-radius: 5px;
+        padding-bottom: 10.5rem;
+    }
+
+    .wrap{
+        margin-left: 0rem;
+    }
 
 
+}
