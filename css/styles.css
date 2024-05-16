@@ -144,7 +144,7 @@ a {
   outline: none;
   color: var(--color-body);
 }
-li:hover:not(.active) {
+ .nav li:hover:not(.active) {
   background-color: #222
 }
 
