@@ -6,49 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/historicial_app_styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-        crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-        crossorigin=""></script>
 </head>
-<body onload="init()">
+<body>
     <nav class="nav">
         <ul class="list nav__list">
           <li class="nav__item" ><a href="\index.html">About</a></li>
-          <li class="nav__item"><a href="\resume.html">Resume</a></li>
+          <li class="nav__item" ><a href="\resume.html">Resume</a></li>
           <li class="nav__item" style="background-color: #5221e6;"><a href="\projects.html">Projects</a></li>
         </ul>
       </nav>
-      <div id="">
-        <h1 id="title">Historical USA States and Territory Boundaries</h1>
-        <div id="mapid"></div>
-        <div id="docs">
-          <p id="infographics" style="color: white;">This page shows Historical US States and Territory Boundaries from 1783-1959. Click a state
-            to get more
-            information.</p>
-          <div id="summaryLabel">
-            <p>Click a state or territory on the map and select a date to get more information.</p>
-          </div>
-          <div id="datePanel">
-            <label for="start">Choose date:</label>
-            <input type="date" id="start" value="1783-09-03" min="1783-09-03" max="1959-08-21" />
-          </div>
-          <div class="slidecontainer">
-            <input id="myRange" class="slider" type="range">
-          </div>
-          <button id="dateButton" class="button">
-            change date
-          </button>
-    
-        </div>
-      </div>
       <footer class= "footer">
         <div style="height: 20rem; background-color: #181823;" >
             <div class ="grid--footer container">
@@ -62,8 +32,5 @@
         </div>
         <div style="height: 5rem; background-image: linear-gradient(180deg, transparent, transparent), linear-gradient(90deg, #5221e6, #8d21e6)"></div>
     </footer>
-      <script src="/js/historical_app.js"></script>
-      <script src="/JSON/US_HistStateTerr.js"></script>
-      <script src="/JSON/USA_Major_Cities.js"></script>
 </body>
 </html>
