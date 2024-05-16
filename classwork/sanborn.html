@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="list nav__list">
+            <li class="nav__item"><a href="\index.html">About</a></li>
+            <li class="nav__item"><a href="\resume.html">Resume</a></li>
+            <li class="nav__item" style="background-color: #5221e6;"><a href="\projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <div style="margin: 5rem; margin-left: 15%; margin-right: 15%;">
+        <h2 style="margin-bottom: 3rem;">Digitalizing Historical Maps</h2>
+        <h3> Introduction</h3>
+        <p> Assignment for GIS Spatial Analysis class</p>
+        <p style="margin-bottom: 3rem;">Digitalized a paper scanned 1920s Sanborn map of Charlottesville, Virgnia using ArcGIS pro. This is done by first Georeferencing the scanned paper map and then tracing the features by hand. Data is stored in vector format </p>
+        <h3> Paper Scanned Sanborn Map</h3>
+        <img src="/images/Sanborn.jpg" alt=""
+            style="margin-top: 2rem; border-width: 1rem; border-style:solid; border-color: #333; margin-bottom: 2rem; width: 75%; width: 75%;">
+        <h3> Digitalized Map</h3>
+            <img src="/images/Digital.png" alt=""
+            style="margin-top: 2rem; border-width: 1rem; border-style:solid; border-color: #333; margin-bottom: 2rem; width: 75%;">
+    </div>
+    <footer class="footer">
+        <div style="height: 20rem; background-color: #181823;">
+            <div class="grid--footer container">
+                <div class="footer__item__bold"><a href="/index.html">About</a></div>
+                <div class="footer__item__bold"><a href="/projects.html">Projects</a>
+                    <div class="footer__item" style="margin-top: .5rem;"><a href="/projects.html#section_classwork"">Classwork</a></div>
+                    <div class=" footer__item"><a href="/projects.html#section_personal"">Personal</a></div>
+                </div>
+                <div class=" footer__item__bold"><a href="/resume.html"">Resume</a></div>
+            </div>
+        </div>
+        <div style=" height: 5rem; background-image: linear-gradient(180deg, transparent, transparent),
+                                    linear-gradient(90deg, #5221e6, #8d21e6)"></div>
+    </footer>
+</body>
+
+</html>
