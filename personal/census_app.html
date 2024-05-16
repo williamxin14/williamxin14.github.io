@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles_census.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="list nav__list">
+          <li class="nav__item" ><a href="\index.html">About</a></li>
+          <li class="nav__item" ><a href="\resume.html">Resume</a></li>
+          <li class="nav__item" style="background-color: #5221e6;"><a href="\projects.html">Projects</a></li>
+        </ul>
+      </nav>
+      <div class='container' id="map" style="margin: 0;">   
+        <div class="leaflet-top leaflet-right">
+            <div class = 'info'>
+                <h1 class="header">Illinois 2020 Census</h1>
+                <div class="label"id ="Name">Total</div>
+                <table id ="table" class = "info-table">
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Candidate</th>
+                        <th>Total</th>
+                        <th>%</th>
+                    </tr>
+                    <tr id="White_row">
+                        <td id ="White_block">&nbsp;</td>
+                        <td>White</td>
+                        <td id="White_votes">0</td>
+                        <td id="White_percent">0.00</td>
+                    </tr>
+                    <tr id ="Black_row">
+                        <td id ="Black_block">&nbsp;</td>
+                        <td>Black</td>
+                        <td id="Black_votes"'>0</td>
+                        <td id="Black_percent">0.00</td>
+                    </tr>
+                    <tr id ="Asian_row">
+                        <td id ="Asian_block">&nbsp;</td>
+                        <td>Asian</td>
+                        <td id="Asian_votes"'>0</td>
+                        <td id="Asian_percent">0.00</td>
+                    </tr>
+                    <tr id="Hispanic_row">
+                        <td id ="Hispanic_block">&nbsp;</td>
+                        <td>Hispanic</td>
+                        <td id="Hispanic_votes">0</td>
+                        <td id="Hispanic_percent">0.00</td>
+                    </tr>
+                    <tr id="Native_row">
+                        <td id ="Native_block">&nbsp;</td>
+                        <td>Native American</td>
+                        <td id="Native_votes">0</td>
+                        <td id="Native_percent">0.00</td>
+                    </tr>
+                    <tr id="Pacific_row">
+                        <td id ="Pacific_block">&nbsp;</td>
+                        <td>Pacific Islander</td>
+                        <td id="Pacific_votes">0</td>
+                        <td id="Pacific_percent">0.00</td>
+                    </tr>
+                    <tr id="Total_row">
+                        <td id ="Total_block">&nbsp;</td>
+                        <td>Total</td>
+                        <td id="Total_votes">0</td>
+                       
+                    </tr>
+                </table> 
+                <div class="leaflet-control wrap">
+                    <div class="wrap">
+                        <button class="btn" id="ward-btn" onclick="ward_click()">County</button>
+                        <button class ="btn" id="precinct-btn" onclick="precinct_click()">Tract</button>
+                    </div>
+                </div> 
+               
+            </div>
+        </div>
+    </div>
+      <script src="/JS/census.js"></script>
+</body>
+</html>
