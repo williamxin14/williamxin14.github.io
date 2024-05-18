@@ -165,6 +165,10 @@ a {
   margin-left: 10px;
 }
 
+.resume__link:hover{
+  color:cyan;
+}
+
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
