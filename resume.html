@@ -2,44 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="nav">
-        <ul class="list nav__list">
-          <li class="nav__item"><a href="index.html">About</a></li>
-          <li class="nav__item" style="background-color: #5221e6;"><a href="resume.html">Resume</a></li>
-          <li class="nav__item"><a href="projects.html">Projects</a></li>
-        </ul>
-      </nav>
-      <div style=" margin-left: 15%; margin-right: 15%; text-align: center;">
-        <h2 style="margin-top: 4rem; margin-bottom: 2rem;">Resume</h2>
-        <a href="/images/William_Resume.pdf" target="_blank" rel="noopener noreferrer" ><p class ="resume__link">Resume (PDF)</p></a>
+  <nav class="nav">
+    <ul class="list nav__list">
+      <li class="nav__item"><a href="index.html">About</a></li>
+      <li class="nav__item" style="background-color: #5221e6;"><a href="resume.html">Resume</a></li>
+      <li class="nav__item"><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+  <div style=" margin-left: 15%; margin-right: 15%; text-align: center;">
+    <h1 style="margin-top: 4rem; margin-bottom: 2rem;">Resume</h1>
+    <a href="/images/William_Resume.pdf" target="_blank" rel="noopener noreferrer">
+      <p class="resume__link">Resume (PDF)</p>
+    </a>
+  </div>
+  <div style="margin: 5rem; margin-left: 15%; margin-right: 15%;">
+    <div class="resume__block" style="background-color: #181823;">
+      <div style="border-style: solid; border-width: 2px; border-color: darkcyan; background-color: #151515;">
+        <h2 style="margin: 0; text-align: center; padding: 1.5rem;">Education</h2>
       </div>
-     
-      <footer class= "footer">
-        <div style="height: 20rem; background-color: #181823;" >
-            <div class ="grid--footer container">
-                <div class="footer__item__bold" ><a href="index.html" >About</a></div>
-                <div class="footer__item__bold" ><a href="projects.html">Projects</a>
-                    <div class="footer__item" style="margin-top: .5rem;" ><a href="projects.html#section_classwork"">Classwork</a></div>
-                    <div class="footer__item" ><a href="projects.html#section_personal"">Personal</a></div>
+      <div style="border-style: solid; border-width: 2px; border-top:0;  border-bottom: 1px solid darkcyan; ;">
+        <img src="/images/Penn_State_Logo.png" alt="" style="width: 20rem;; margin: 2rem; margin-bottom: -.5rem; ">
+        <p style="margin: 1rem;"> <span style="color: white; font-size: 2.5rem;">Penn State University </span> <span
+            style="font-style: italic; font-size: 1.75rem;">&nbsp;&nbsp;(May 2024 - current) </span></p>
+        <p style="margin: 1rem;"> Master of
+          Geographic Information Systems </p>
+      </div>
+      <div style="border-style: solid; border-width: 2px; border-top:0; border-bottom: 1px solid darkcyan ;">
+        <img src="/images/Penn_State_Logo.png" alt="" style="width: 20rem; margin: 2rem; margin-bottom: -.5rem;">
+        <p style="margin: 1rem;"> <span style="color: white; font-size: 2.5rem;">Penn State University </span> <span
+            style="font-style: italic; font-size: 1.75rem;">&nbsp;&nbsp;(August 2023 - May 2024) </span></p>
+        <p style="margin: 1rem;"> Postbaccalaureate Certificate in
+          Geographic Information Systems </p>
+      </div>
+      <div style="border-style: solid; border-width: 2px; border-top:0; border-bottom: 1px solid darkcyan ;">
+        <img src="/images/purdue_logo.png" alt="" style="width: 8rem; margin: 1.5rem; margin-bottom: .5rem;">
+        <img src="/images/purdue_label.png" alt="" style="width: 15rem;">
+        <p style="margin: 1rem;"> <span style="color: white; font-size: 2.5rem;">Purdue University </span> <span
+            style="font-style: italic; font-size: 1.75rem;">&nbsp;&nbsp;(August 2017 - May 2022) </span></p>
+        <p style="margin: 1rem;"> Bachelor of Science in Civil Engineering </p>
+      </div>
+    </div>
+    <div class="resume__block" style="background-color: #181823;">
+      <div style="border-style: solid; border-width: 2px; border-color: darkcyan; background-color: #151515;">
+        <h2 style="margin: 0; text-align: center; padding: 1.5rem;">Programming Skills</h2>
+      </div>
+      <div
+        style="border-style: solid; border-width: 2px; border-top:0;  border-bottom: 1px solid darkcyan; display: flex; justify-content: space-between;">
+        <div style="margin-top: 2rem; margin-left: 5%;">
+          <img src="/images/Python.png" alt=""
+            style="width: 5rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0; margin-bottom: 1.5rem;">Python</h3>
+        </div>
+        <div style="margin-top: 2rem;">
+          <img src="/images/html.png" alt=""
+            style="width:5rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;">HTML</h3>
+        </div>
+        <div style="margin-top: 2rem;">
+          <img src="/images/css.png" alt=""
+            style="width: 3.5rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;">CSS</h3>
+        </div>
+        <div style="margin-top: 1.8rem;">
+          <img src="/images/js.png" alt=""
+            style="width:8rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;">JavaScript</h3>
+        </div>
+        <div style="margin-top: 1.5rem;">
+          <img src="/images/R.png" alt=""
+            style="width:6rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;">R</h3>
+        </div>
+        <div style="margin-top: 1.5rem;">
+          <img src="/images/matlab.png" alt=""
+            style="width:6rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;">MATLAB</h3>
+        </div>
+        <div style="margin-top: 1.5rem;  margin-right: 5%;">
+          <img src="/images/SQL.png" alt=""
+            style="width: 5.5rem;; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;"> mySQL</h3>
+        </div>
+      </div>
+    </div>
+    <div class="resume__block" style="background-color: #181823;">
+      <div style="border-style: solid; border-width: 2px; border-color: darkcyan; background-color: #151515;">
+        <h2 style="margin: 0; text-align: center; padding: 1.5rem;">Software Skills</h2>
+      </div>
+      <div
+        style="border-style: solid; border-width: 2px; border-top:0;  border-bottom: 1px solid darkcyan; display: flex; justify-content: space-between;">
+        <div style="margin-top: 2rem; margin-left: 5%;">
+          <img src="/images/mircosoft.png" alt=""
+            style="width: 15rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0; margin-bottom: 1.5rem;">Mircosoft Office</h3>
+        </div>
+        <div style="margin-top: 2rem;">
+          <img src="/images/ArcGIS_Pro.png" alt=""
+            style="width:5rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;">ArcGIS</h3>
+        </div>
+        <div style="margin-top: 2rem;">
+          <img src="/images/QGIS.png" alt=""
+            style="width: 12rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;">QGIS</h3>
+        </div>
+        <div style="margin-top: 1.8rem; margin-right: 5%;">
+          <img src="/images/leaflet.png" alt=""
+            style="width:19rem; margin-bottom: 0; display: block; margin: auto; margin-bottom: .5rem; ">
+          <h3 style=" text-align: center; margin: 0;margin-bottom: 1.5rem;">Leaflet</h3>
+        </div>
+      </div>
+    </div>
+    <div class="resume__block" style="background-color: #181823;">
+      <div style="border-style: solid; border-width: 2px; border-color: darkcyan; background-color: #151515;">
+        <h2 style="margin: 0; text-align: center; padding: 1.5rem;">Relevant Coursework</h2>
+      </div>
+      <div
+        style="border-style: solid; border-width: 2px; border-top:0;  border-bottom: 1px solid darkcyan; display: flex; justify-content: space-between;">
+        <div style="display: flex; margin: auto;">
+          <div>
+            <p style="margin-bottom: 4rem;">
+            <ul style="padding-left: 4rem; margin-bottom: 4rem; list-style: none;">
+              <li>•	Principles and Practice of Geomatics  </li>
+              <li>•	Advanced C Programming</li>
+              <li>•	Linear Algebra</li>
+              <li>•	Calculus & Differential Equation</li>
+              <li>•	Statistical Methods</li>
+              <li>•	Structural Steel Design</li>
+              <li>•	Geotechnical Engineering</li>
+              <li>•	GIS Database Development</li>
+              <li>•	Open Web Mapping</li>
+            </ul>
+            </p>
+          </div>
+          <div>
+            <p style="margin-bottom: 4rem;">
+            <ul style="padding-left: 4rem; margin-bottom: 4rem; list-style: none;">
+              <li>•	Graphic for Civil Engineering & Construction </li>
+              <li>•	Mechanics of Materials</li>
+              <li>•	Structural Analysis</li>
+              <li>•	Civil Engineering Materials</li>
+              <li>•	Hydraulics</li>
+              <li>•	Reinforced Concrete Design</li>
+              <li>•	Transportation Engineering</li>
+              <li>•	GIS Programming and Software Development</li>
+              <li>&#42;	Geospatial Web Application Development (progressing)</li>
+            </ul>
+            </p>
+          </div>
+          <div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="footer">
+    <div style="height: 20rem; background-color: #181823;">
+      <div class="grid--footer container">
+        <div class="footer__item__bold"><a href="index.html">About</a></div>
+        <div class="footer__item__bold"><a href="projects.html">Projects</a>
+          <div class="footer__item" style="margin-top: .5rem;"><a href="projects.html#section_classwork"">Classwork</a></div>
+                    <div class=" footer__item"><a href="projects.html#section_personal"">Personal</a></div>
                 </div>
-                <div class="footer__item__bold" ><a href="resume.html"">Resume</a></div>
+                <div class=" footer__item__bold"><a href="resume.html"">Resume</a></div>
             </div>
         </div>
-        <div style="height: 5rem; background-image: linear-gradient(180deg, transparent, transparent), linear-gradient(90deg, #5221e6, #8d21e6)"></div>
-    </footer>
-   
+        <div style=" height: 5rem; background-image: linear-gradient(180deg, transparent, transparent),
+                  linear-gradient(90deg, #5221e6, #8d21e6)"></div>
+  </footer>
+
 </body>
 
 </html>

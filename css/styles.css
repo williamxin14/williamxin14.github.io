@@ -478,3 +478,11 @@ a {
 
  
 }
+
+.resume__block{
+  border-color: #00d9ff;
+}
+
+.resume__school{
+  border-bottom: white;
+}
