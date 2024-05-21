@@ -364,3 +364,21 @@ highlight_reset_row = function (Winner) {
   document.getElementById("Hispanic_block").style.backgroundColor = "#f6993f99";
   document.getElementById("Hispanic_row").style.color = "#ffffff80";
 }
+
+const mediaQuery = window.matchMedia('(max-width: 768px)')
+
+function handleTabletChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    // Then log the following message to the console
+    document.getElementById("l_control").className="leaflet-bottom leaflet-right"
+  }else{
+    document.getElementById("l_control").className="leaflet-top leaflet-right"
+  }
+}
+
+// Register event listener
+mediaQuery.addListener(handleTabletChange)
+
+// Initial check
+handleTabletChange(mediaQuery)
