@@ -366,6 +366,8 @@ a {
   background: #02cdf1;
 }
 
+
+
 /* projects */
 .project {
   padding: 3rem;
@@ -396,6 +398,14 @@ a {
   margin-left: 5%;
   margin-right: 5%;
 }
+
+ a:hover h3{
+  color: cyan;
+  transition: 1s;
+
+}
+
+
 
 @media screen and (min-width: 768px) {
   .project__image {
@@ -513,6 +523,7 @@ a {
   width: 75%;
   margin: auto;
   margin-bottom: 2rem;
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -533,12 +544,14 @@ a {
     font-style: bold;
     size: 1rem;
     margin-bottom: 0rem;
+    
   }
 }
 
 .projects__button:hover {
   background-color: rgba(82, 33, 230, 100%);
   transition-duration: 0.5s;
+  
 }
 /*resume */
 .resume__block {

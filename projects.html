@@ -22,7 +22,7 @@
         </ul>
     </nav>
    
-    <div class="container" style="text-align: center;">
+    <div class="container" style="text-align: center;" data-aos="zoom-in" data-aos-duration="750">
         <h1 style="margin-top: 7rem;">
             Portfolio Projects
         </h1>
@@ -32,11 +32,11 @@
         </p>
     </div>
     <div class="wrapper button-grid">
-        <a href="#section_classwork">
-            <div class = "projects__button">CLASSWORK</div>
+        <a href="#section_classwork" data-aos="fade-right" data-aos-duration="750">
+            <div class = "projects__button" >CLASSWORK</div>
         </a>
-        <a href="#section_personal">
-            <div class = "projects__button">PERSONAL</div>
+        <a href="#section_personal" data-aos="fade-left" data-aos-duration="750">
+            <div class = "projects__button" >PERSONAL</div>
         </a>
     </div>
    <div style="width: 100%; height: 30rem; background-color: #000;"></div>
@@ -44,13 +44,13 @@
     <div class="project__section" id = "section_classwork">
         <div class="wrapper projects-grid">
             <div class="normal-wrapper">
-                <div class="normal-wrapper" style="margin-bottom: 2.5rem; padding: 2.5rem;">
+                <div class="normal-wrapper" style="margin-bottom: 2.5rem; padding: 2.5rem;" data-aos="fade-right" data-aos-duration="750">
                     <p style="margin:0px;">MY PROJECTS</p>
                     <h1 style="margin:0px;">Classwork</h1>
                 </div>
                 <div class="normal-wrapper">
                     <a href="classwork/united_states_historical_boundaries_app.html">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-right" data-aos-duration="750">
                             <div class="project__image">
                                 <img src="images/Historical_Boundaries_App.png" />
                             </div>
@@ -62,7 +62,7 @@
                         </div>
                     </a>
                     <a href="classwork/relief_zone.html">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-right" data-aos-duration="750">
                             <div class="project__image">
                                 <img src="images/Relief_Zone.jpg" />
                             </div>
@@ -80,7 +80,7 @@
             <div class="normal-wrapper">
                 <div class="normal-wrapper" style ="margin-top: 5rem" >
                     <a href="classwork/tooltip.html">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-left" data-aos-duration="750">
                             <div class="project__image">
                                 <img src="images/Tooltip.png" />
                             </div>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="normal-wrapper">
                     <a href="classwork/sanborn.html">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-left" data-aos-duration="750">
                             <div class="project__image">
                                 <img src="images/Sanborn.jpg" alt="A happy, smiling customer" />
                             </div>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="normal-wrapper">
                     <a href="classwork/site_selection.html">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-left" data-aos-duration="750">
                             <div class="project__image">
                                 <img src="images/site_selection.png" alt="A happy, smiling customer" />
                             </div>
@@ -130,13 +130,13 @@
     <div class="project__section" id = "section_personal" style="margin-bottom: 7rem;">
         <div class="wrapper projects-grid">
             <div class="normal-wrapper">
-                <div class="normal-wrapper" style="margin-bottom: 2.5rem; padding: 2.5rem;">
+                <div class="normal-wrapper" style="margin-bottom: 2.5rem; padding: 2.5rem;" data-aos="fade-right" data-aos-duration="750">
                     <p style="margin:0px;">MY PROJECTS</p>
                     <h1 style="margin:0px;">Personal</h1>
                 </div>
                 <div class="normal-wrapper">
                     <a href="personal/census_app.html">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-right" data-aos-duration="750">
                             <div class="project__image">
                                 <img src="images/census.png" />
                             </div>
@@ -151,7 +151,7 @@
             <div class="normal-wrapper">
                 <div class="normal-wrapper" style ="margin-top: 5rem">
                     <a href="personal/geography.html">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-left" data-aos-duration="750">
                             <div class="project__image">
                                 <img src="images/multi.png" />
                             </div>
@@ -164,7 +164,7 @@
                 </div>
                 <div class="normal-wrapper">
                     <a href="personal/3d.html">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-right" data-aos-duration="750">
                             <div class="project__image">
                                 <img src="images/3D.png" alt="A happy, smiling customer" />
                             </div>
@@ -192,6 +192,8 @@
         </div>
         <div style="height: 5rem; background-image: linear-gradient(180deg, transparent, transparent), linear-gradient(90deg, #5221e6, #8d21e6)"></div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
