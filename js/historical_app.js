@@ -3,7 +3,7 @@ function init() {
   // create map and set center and zoom level
 
   map = new L.map("mapid");
-  map.setView([39.8283, -98.5795], 5);
+  map.setView([39.8283, -78.5795], 4);
   // create tile layer and add it to map
   var tiles = L.tileLayer(
     "https://tiles.stadiamaps.com/tiles/stamen_terrain_background/{z}/{x}/{y}{r}.png?api_key=41fb0f86-dbe6-455a-ac7d-9d78e4d503bf"

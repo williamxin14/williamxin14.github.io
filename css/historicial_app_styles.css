@@ -4,8 +4,33 @@
   height: 50vh;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
   border: 10px solid #222;
+}
+@media screen and (min-width: 1024px) {
+  #mapid {
+    position: relative;
+    display: block;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 10px solid #222;
+  }
+}
+
+#infobox{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #infobox{
+    width: 40%;
+  }
+  
 }
 #title {
   text-align: center;
@@ -18,7 +43,7 @@
   border: 5px solid #0e968b;
   background-color: #181823;
   margin-top: 2.5rem;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,7 +55,7 @@
   margin-left: auto;
   margin-right: auto;
   
-  width: 75%;
+  width: 100%;
  
 }
 
@@ -38,6 +63,7 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
 
 .button {
   background-color: #000;
@@ -52,6 +78,7 @@
   cursor: pointer;
   border: 4px solid #0e968b;
   transition-duration: 0.4s;
+  margin: 2rem;
 }
 
 .button:hover {
@@ -97,3 +124,4 @@
   background: #5221e6;
   cursor: pointer;
 }
+
