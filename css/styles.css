@@ -550,8 +550,8 @@ a {
 }
 
 .resume_program_img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height:20px;
 }
 
 .img_block {
@@ -561,9 +561,13 @@ a {
   margin-right: 1%;
 }
 
+.img_block>p{
+  font-size: 1rem;
+}
+
 .resume_software_img {
-  width: 80px;
-  height: 40px;
+  width: 56px;
+  height: 28px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -581,6 +585,10 @@ a {
   .resume_software_img {
     width: 160px;
     height: 80px;
+  }
+
+  .img_block>p{
+    font-size: 2rem;
   }
   
 }
