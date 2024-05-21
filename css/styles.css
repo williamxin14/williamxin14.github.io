@@ -67,6 +67,13 @@ ul{
   font-size: 1.5rem;
 }
 
+li{
+  font-size: 1.5rem;
+}
+.footer__item__bold>a{
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -91,6 +98,12 @@ ul{
   }
   ul{
     font-size: 2rem;
+  }
+  li{
+    font-size: 2rem;
+  }
+  .footer__item__bold>a{
+    font-size: 3.5rem;
   }
 }
 /* Navigation Bar */
@@ -304,6 +317,7 @@ a {
 .footer__item__bold{
   font-size: 3rem;
   
+  
 }
 
 .footer__item> a:hover{
@@ -312,12 +326,14 @@ a {
 
 .footer__item__bold> a:hover{
   color: cyan;
+ 
 }
 
 
 
 .footer__item{
   font-size: 0;
+  
 }
 
 @media screen and (min-width: 768px) {

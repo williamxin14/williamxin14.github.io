@@ -46,6 +46,20 @@
     
 }
 
+@media screen and (max-width: 768px) {
+    
+    
+    .info{ 
+        border-radius: 5px;
+        padding-bottom: 10.5rem; 
+        margin: auto;
+        top: 415px;
+      
+    }
+
+
+}
+
 
 td{
     text-align: center;
@@ -121,19 +135,4 @@ th{
     color: #edeee7;
 }
 
-@media screen and (max-width: 768px) {
-    html{
-        font-size: 20%;
-    }
-    
-    .info{
-        border-radius: 5px;
-        padding-bottom: 10.5rem;
-    }
 
-    .wrap{
-        margin-left: 0rem;
-    }
-
-
-}
