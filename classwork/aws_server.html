@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwork | EV Charging Station Web Mapping Application</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="list nav__list">
+            <li class="nav__item"><a href="\index.html">About</a></li>
+            <li class="nav__item"><a href="\resume.html">Resume</a></li>
+            <li class="nav__item" style="background-color: #5221e6;"><a href="\projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <div class = "container">
+        <h2 style="margin-bottom: 3rem;">EV Charging Station Web Mapping Application</h2>
+        <h3> Introduction</h3>
+        <p> Assignment for GIS Server and Cloud Class</p>
+        <p style="margin-bottom: 3rem;"> I developed a full-stack GIS web application that visualizes EV charging stations 
+            across Illinois.The project was hosted on an AWS EC2 instance running ArcGIS Server, where I published dynamic 
+            feature services to support real-time data display.</p>
+        <h3> System Architecture Diagram</h3>
+        <img src="/images/aws_diagram.png" alt=""
+            style="margin-top: 3rem; border-width: 1rem; border-style:solid; border-color: #333; margin-bottom: 2rem; width: 75%; width: 75%;">
+
+        <p style="margin-bottom: 4rem;">  The user interface was built using the ArcGIS API for JavaScript, 
+            providing users with an intuitive interface to explore charging station locations, availability, and related metadata. 
+            The dynamic feature updates are handled by a Python service script that periodically scrapes data 
+            from the Open Charge Map API and  directly updates the hosted feature service on the EC2-based 
+            ArcGIS Server</p>
+        <h3> Interactive map interface built with ArcGIS API for JavaScript</h3>
+        <img src="/images/aws_interface.png" alt=""
+            style="margin-top: 3rem; border-width: 1rem; border-style:solid; border-color: #333; margin-bottom: 2rem; width: 75%;">
+    </div>
+    <footer class="footer">
+        <div style="height: 20rem; background-color: #181823;">
+            <div class="grid--footer container">
+                <div class="footer__item__bold"><a href="/index.html">About</a></div>
+                <div class="footer__item__bold"><a href="/projects.html">Projects</a>
+                    <div class="footer__item" style="margin-top: .5rem;"><a href="/projects.html#section_classwork"">Classwork</a></div>
+                    <div class=" footer__item"><a href="/projects.html#section_personal"">Personal</a></div>
+                </div>
+                <div class=" footer__item__bold"><a href="/resume.html"">Resume</a></div>
+            </div>
+        </div>
+        <div style=" height: 5rem; background-image: linear-gradient(180deg, transparent, transparent),
+                                    linear-gradient(90deg, #5221e6, #8d21e6)"></div>
+    </footer>
+</body>
+
+</html>
